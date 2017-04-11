@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 
 var db=mongo.db('mongodb://localhost:27017/test',{native_parser:true});
 db.bind('homework7');
-db.homework7.findOne({message: "ba12e76147f0f251b3a2975f7acaf446a86be1b4e2a67a5d51d62f7bfbed5c03"},function (err,item) {
+db.homework7.findOne({},function (err,item) {
 var enc=item.message;
 
 
